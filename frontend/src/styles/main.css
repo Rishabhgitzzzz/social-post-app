@@ -1,0 +1,325 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-inner {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-right button {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+/* MAIN */
+.main {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+/* SEARCH */
+.search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.search input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: #eef1f6;
+    outline: none;
+}
+
+.search button {
+    border-radius: 50%;
+    padding: 12px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+/* CARD */
+.card {
+    width: 100%;
+    background: white;
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* CREATE */
+.create-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* TEXTAREA */
+textarea {
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background: #f5f7fb;
+    padding: 12px;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+/* FILE INPUT */
+.file-input {
+    margin-top: 10px;
+}
+
+.file-input input {
+    display: none;
+}
+
+.file-label {
+    padding: 6px 12px;
+    background: #eef1f6;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.file-name {
+    margin-left: 10px;
+    font-size: 12px;
+    color: gray;
+}
+
+/* CREATE BOTTOM */
+.create-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* POST BUTTON */
+.post-btn {
+    background: #007bff;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.post-btn:hover {
+    opacity: 0.9;
+}
+
+/* FILTERS (🔥 FIXED — YOUR MISSING PART) */
+.filters {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.filters button {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #eef1f6;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.filters .active {
+    background: #007bff;
+    color: white;
+}
+
+/* POST HEADER */
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* USER */
+.user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.user img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.user h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.user p {
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+}
+
+/* FOLLOW BUTTON */
+.follow {
+    background: #007bff;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/* CONTENT */
+.content {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* IMAGE */
+.post-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* ACTIONS */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.post-actions button {
+    border: none;
+    background: #eef1f6;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* COMMENTS */
+.comments {
+    margin-top: 8px;
+}
+
+.comments p {
+    font-size: 13px;
+    margin: 4px 0;
+}
+
+/* COMMENT BOX */
+.comment-box {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.comment-box input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    background: #eef1f6;
+    font-size: 13px;
+}
+
+.comment-box button {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.comment-box button:hover {
+    opacity: 0.9;
+}
+
+.delete-btn {
+    border: none;
+    background: #ffe5e5;
+    color: red;
+    border-radius: 50%;
+    padding: 6px 8px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background: #ffcccc;
+}
+
+/* ================= AUTH ================= */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-card {
+    width: 350px;
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.auth-card input {
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background: #eef1f6;
+}
+
+.auth-card button {
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+}
